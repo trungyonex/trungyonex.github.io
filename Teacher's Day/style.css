@@ -30,6 +30,12 @@ body {
   margin: 2.67em 0;
 }
 
+.wrap img{
+	position: absolute;
+	right: 40px;
+	bottom: 130px;
+}
+
 #card-front, #card-inside {
   width: 50%;
   -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.25), 0 0 1px rgba(0, 0, 0, 0.5);
@@ -134,7 +140,7 @@ p.signed {
 
 #card-front button {
   position: absolute;
-  bottom: 1em;
+  bottom: 0.5em;
   right: -12px;
   background: #F44;
   color: #FFF;
@@ -153,7 +159,6 @@ p.signed {
 #card-front button:focus {
   background: #F22;
 }
-
 #close {
   display: none;
 }
@@ -166,10 +171,14 @@ p.signed {
 #card.open-fully #close,
 #card-open-half #close {
   display: inline;
+  transform: rotateY(180deg);
 }
 
 #card.open-fully #open {
   display: none;
+}
+#card.open-fully #card-front .wrap {
+	display: none;
 }
 
 #card.open-half #card-front,
@@ -199,7 +208,7 @@ p.signed {
 footer {
   max-width: 500px;
   margin: 40px auto;
-font-family: 'Lobster', cursive;
+  font-family: 'Lobster', cursive;
   font-size: 14px;
   line-height: 1.6;
   color: #888;
@@ -285,17 +294,28 @@ font-family: 'Lobster', cursive;
 }
 #card2 {
   position: relative;
-  top: 130px;
+  top: 100px;
   float: right;
-  right: 100;
+  right: 90;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-10deg);
+}
+#tym {
+  position: relative;
+  float: right;
+  left: 55px;
+  bottom: -150px;
+}
+.cat {
+  position: relative;
+  float: right;
+  bottom: -60px;
 }
 #card3 {
   position: relative;
   float: left;
   top: 50px;
-  left: 30px;
+  left: 10px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
