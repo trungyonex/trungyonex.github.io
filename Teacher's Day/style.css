@@ -357,7 +357,7 @@ footer {
   }
 }
 
-@media only (min-width: 360px) and (max-width:780px){
+@media only screen and (max-width:780px){
   body{
     background-size: auto;
     background-repeat: repeat-y;
